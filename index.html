@@ -15,13 +15,15 @@
 		data-bttnio-context='{ "user_location": { "latitude": 40.727104, "longitude": -73.985363 }, "subject_location": { "latitude": 40.748647, "longitude": -73.9487750 } }'>
 	</div>
 
-	<script>
-		window.ButtonWebConfig = {
-			applicationId: 'app-40cc2ca1050a4a4e'
-		};
-		(function(u,s,e,b,t,n){
-			u['__bttnio']=b;u[b]=u[b]||function(){(u[b].q=u[b].q||[]).push(arguments)};t=s.createElement(e);n=s.getElementsByTagName(e)[0];t.async=1;t.src='https://web.btncdn.com/v1/button.js';n.parentNode.insertBefore(t,n)
-		})(window, document, 'script', 'bttnio');
-	</script>
+<script>
+  (function(u,s,e,b,t,n){u['__bttnio']=b;u[b]=u[b]||function(){(u[b].q=u[b].q||[]).push(arguments)};t=s.createElement(e);n=s.getElementsByTagName(e)[0];t.async=1;t.src='https://web.btncdn.com/v1/button_dev.js';n.parentNode.insertBefore(t,n)})(window, document, 'script', 'bttnio');
+</script>
+<script>
+  document.cookie.split(";").forEach(function(c) { document.cookie = c.replace(/^ +/, "").replace(/=.*/, "=;expires=" + new Date().toUTCString() + ";path=/"); });
+  window.ButtonWebConfig = {
+    applicationId: 'app-40cc2ca1050a4a4e',
+    enableLogging: true
+  };
+</script>
 </body>
 </html>
