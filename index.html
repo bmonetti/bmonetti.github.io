@@ -1,37 +1,27 @@
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-  <meta name="viewport"
-        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Hi this is brian">
+	<title>brians website</title>
 </head>
 <body>
-<div>See songs on iTunes</div>
-<div data-bttnio-id="btn-4eb15327a7fa5ea1"></div>
-<div>Uber</div>
-<div data-bttnio-id="btn-6627494ad04d32b6"
-     data-bttnio-context='{
-  "subject_location": {
-    "latitude": 40.7530763,
-    "longitude": -74.0069671
-  }
-}'></div>
-<div>Groupon</div>
-<div data-bttnio-id="btn-3920d507287aa60d"
-     data-bttnio-context='{
-  "subject_location": {
-    "latitude": 40.7530763,
-    "longitude": -74.0069671
-  }
-}'></div>
 
-<script>
-  (function(u,s,e,b,t,n){u['__bttnio']=b;u[b]=u[b]||function(){(u[b].q=u[b].q||[]).push(arguments)};t=s.createElement(e);n=s.getElementsByTagName(e)[0];t.async=1;t.src='https://web.btncdn.com/v1/button_dev.js';n.parentNode.insertBefore(t,n)})(window, document, 'script', 'bttnio');
-</script>
-<script>
-  document.cookie.split(";").forEach(function(c) { document.cookie = c.replace(/^ +/, "").replace(/=.*/, "=;expires=" + new Date().toUTCString() + ";path=/"); });
-  window.ButtonWebConfig = {
-    applicationId: 'app-40cc2ca1050a4a4e',
-    enableLogging: true
-  };
-</script>
+	<h1> hello this is brian. I am learning how to put buttons into my website. </h1>
+
+	<div> Uber </div>
+	<div data-bttnio-id="btn-6627494ad04d32b6"
+		data-bttnio-context='{ "user_location": { "latitude": 40.727104, "longitude": -73.985363 }, "subject_location": { "latitude": 40.748647, "longitude": -73.9487750 } }'>
+	</div>
+
+	<script>
+		window.ButtonWebConfig = {
+			applicationId: 'app-40cc2ca1050a4a4e'
+		};
+		(function(u,s,e,b,t,n){
+			u['__bttnio']=b;u[b]=u[b]||function(){(u[b].q=u[b].q||[]).push(arguments)};t=s.createElement(e);n=s.getElementsByTagName(e)[0];t.async=1;t.src='https://web.btncdn.com/v1/button.js';n.parentNode.insertBefore(t,n)
+		})(window, document, 'script', 'bttnio');
+	</script>
 </body>
 </html>
