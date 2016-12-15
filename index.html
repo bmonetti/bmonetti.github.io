@@ -9,7 +9,7 @@
 <body style="text-align: center">
 
 	<h1>Lets go climbing!</h1>
-	<h5>We can get an Uber from Brian's apartment!</h5>
+	<h4>We can get a ride from Brian's apartment!</h4>
 
 	<img style="-webkit-user-select: none" src="http://image.flaticon.com/icons/png/128/61/61037.png" width="50" height="50" align="middle">
 
@@ -33,14 +33,10 @@
 	</div>
 
 	<script>
-	  (function(u,s,e,b,t,n){u['__bttnio']=b;u[b]=u[b]||function(){(u[b].q=u[b].q||[]).push(arguments)};t=s.createElement(e);n=s.getElementsByTagName(e)[0];t.async=1;t.src='https://web.btncdn.com/v1/button_dev.js';n.parentNode.insertBefore(t,n)})(window, document, 'script', 'bttnio');
+	window.ButtonWebConfig = {
+		  applicationId: 'app-40cc2ca1050a4a4e'
+		};
+		(function(u,s,e,b,t,n){
+		  u['__bttnio']=b;u[b]=u[b]||function(){(u[b].q=u[b].q||[]).push(arguments)};t=s.createElement(e);n=s.getElementsByTagName(e)[0];t.async=1;t.src='https://web.btncdn.com/v1/button.js';n.parentNode.insertBefore(t,n)
+		})(window, document, 'script', 'bttnio');
 	</script>
-	<script>
-	  document.cookie.split(";").forEach(function(c) { document.cookie = c.replace(/^ +/, "").replace(/=.*/, "=;expires=" + new Date().toUTCString() + ";path=/"); });
-	  window.ButtonWebConfig = {
-	    applicationId: 'app-40cc2ca1050a4a4e',
-	    enableLogging: true
-	  };
-	</script>
-</body>
-</html>
